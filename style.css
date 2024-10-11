@@ -1,0 +1,63 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url("bg.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playArea {
+    background: linear-gradient(rgb(80, 130, 80), rgb(164, 177, 53));
+    width: 87vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+#scorebox {
+    position: absolute;
+    top:40px;
+    right: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(245, 14, 14);
+    
+}
+
+#highscorebox {
+    position: absolute;
+    top:90px;
+    right: 120px;
+    font-size: 40px;
+    font-weight: bold; 
+    color: rgb(255, 0, 0);   
+}
+
+.snake {
+    background-color: purple;
+    border: 3px solid gainsboro;
+    border-radius: 5px;
+}
+
+.food {
+    background-color: rgb(236, 248, 8);
+    border: 2px dashed blue;
+    border-radius: 30px;
+}
+
+.head {
+    background-color: rgb(205, 15, 15);
+    border: 8px solid black;
+    border-radius: 10px;
+}
